@@ -16,6 +16,10 @@ eureka:
     waitTimeInMsWhenSyncEmpty: 0
     enableSelfPreservation: false
     
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+    
 security:
   user:
     name: Dstashek  
